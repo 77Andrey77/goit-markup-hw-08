@@ -1,0 +1,41 @@
+.characteristics {
+  display: flex;
+
+  .item {
+    display: block;
+    width: 270px;
+    //  width: calc((100%-90px) / 4);
+  }
+
+  .item {
+    margin-right: 30px;
+  }
+
+  .item:last-child {
+    margin-right: 0px;
+  }
+
+  &-icon {
+    display: block;
+    background-color: $second-color-body;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    border-radius: 4px;
+  }
+}
+.section {
+  &-option {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  &-text {
+    color: $text-color;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

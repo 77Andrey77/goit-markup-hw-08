@@ -1,0 +1,16 @@
+.conteyner {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 80px;
+  //  background-color: greenyellow;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}

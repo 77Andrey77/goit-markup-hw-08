@@ -1,0 +1,40 @@
+.hero {
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/hero-img.jpg);
+
+  &-section {
+    padding-top: 200px;
+  }
+
+  .title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 646px;
+
+    text-transform: uppercase;
+    color: $text-white-color;
+    //  background-color: red;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+
+  .link {
+    margin-top: 46px;
+  }
+
+  .button {
+    display: inline-flex;
+  }
+}
