@@ -1,9 +1,9 @@
 // .section {
 //   .title {
-//     font-size: 36px;
-//     line-height: 1.16;
-//     text-align: center;
-//     margin-bottom: 50px;
+// font-size: 36px;
+// line-height: 1.16;
+// text-align: center;
+// margin-bottom: 50px;
 //   }
 
 //   &-work {
@@ -24,16 +24,19 @@
 //   }
 // }
 
-// .works {
-//   .list {
-//     display: flex;
-//     justify-content: center;
-//   }
-//   .item {
-//     position: relative;
-//     margin-right: 30px;
-//   }
-//   .item:last-child {
-//     margin-right: 0px;
-//   }
-// }
+.works {
+  // .list {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+  // .item {
+  //   position: relative;
+  //   margin-right: 30px;
+  // }
+  // .item:last-child {
+  //   margin-right: 0px;
+  // }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
