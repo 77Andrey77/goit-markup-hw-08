@@ -1,43 +1,57 @@
-// .сlients {
-//   .title {
-//     margin-bottom: 50px;
-//   }
+.clients {
+  // стили для заголовка
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  // стили для ссылки
+  .link {
+    display: flex;
+    // background-color: red;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//   .list {
-//     display: flex;
-//   }
+    // изменение цвета бордера при ховер и фокусе
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+    // изменение цвета свг при ховер и фокус
+    &:hover > .clients-icon,
+    &:focus > .clients-icon {
+      fill: $accent-color;
+    }
+  }
+  // изменяем цвет иконки свг
+  &-icon {
+    fill: $color-icon-svg;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-//   .item {
-//     margin-right: 30px;
-//   }
-//   // последнему потомку убираем маржин
-//   .item:last-child {
-//     margin-right: 0px;
-//   }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
 
-//   .link {
-//     display: inline-flex;
-//     width: 170px;
-//     height: 90px;
-//     justify-content: center;
-//     align-items: center;
-//     border: 1px solid #afb1b8;
-//     border-radius: 4px;
-//     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-//   // изменение цвета рамки при ховер и фокус
-//   .link:hover,
-//   .link:focus {
-//     border: 1px solid $accent-color;
-//   }
+    .item {
+      margin: 15px;
 
-//   &-icon {
-//     fill: $color-icon-svg;
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-//   //  изменение цвета свг при ховер и фокус
-//   .link:hover > .clients-icon,
-//   .link:focus > .clients-icon {
-//     fill: $accent-color;
-//   }
-// }
+      @media screen and (max-width: 767px) {
+        flex-basis: calc((100% - 4 * 15px) / 2);
+      }
+
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 6 * 15px) / 3);
+      }
+
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 12 * 15px) / 6);
+      }
+    }
+  }
+}

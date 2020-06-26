@@ -1,4 +1,8 @@
 .characteristics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   svg {
     width: 70px;
     height: 70px;
@@ -12,31 +16,40 @@
     justify-content: center;
 
     margin-bottom: 30px;
-
-    @media screen and (min-width: 480px) {
-      width: 100%;
-    }
-    // @media screen and (min-width: 768px) {
-    //   width: 50%;}
-    // @media screen and (min-width: 1200px) {
-    //   width: 33.333%;}
   }
-
-  //   display: flex;
-  //   .item {
-  //     display: block;
-  //     width: 270px;
-  //     //  width: calc((100%-90px) / 4);
-  //   }
 
   .item {
-    margin-bottom: 30px;
+    // background-color: tomato;
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  // тоже самое что и вверху
+  // @media screen and (max-width: 480px) {
+  //   .item:not(:last-child) {
+  //     margin-bottom: 30px;
+  //   }
+  // }
+
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    .item {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
   }
 
-  .item:last-child {
-    margin-bottom: 0px;
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+    .item {
+      flex-basis: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
   }
 }
+
 .section {
   &-option {
     // margin-top: 30px;
