@@ -4,12 +4,23 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: green;
+  // background-color: green;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+
+    .conteyner {
+      display: block;
+      width: 100%;
+    }
+  }
 
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   .menu-button {
@@ -58,16 +69,11 @@
 
     @media screen and (min-width: 768px) {
       display: flex;
+      height: 80px;
       justify-content: space-between;
       flex-grow: 1;
     }
   }
-  // .site-nav {
-  //   background-color: rebeccapurple;
-  // }
-  // .auth-nav {
-  //   background-color: goldenrod;
-  // }
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
@@ -80,12 +86,6 @@
   @media screen and (min-width: 1200px) {
     width: 1170px;
   }
-
-  //   display: flex;
-  //   width: 1200px;
-  //   height: 80px;
-  //   justify-content: space-between;
-  //   align-items: center;
 }
 
 // .page-header {

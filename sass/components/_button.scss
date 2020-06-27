@@ -17,11 +17,12 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-// .button.foot {
-//   font-weight: 900;
-//   margin-left: 12px;
-// }
-// .footer-knopka {
-//   margin-left: 10px;
-//   fill: $white-color-icon-svg;
-// }
+.button.foot {
+  font-weight: 900;
+  // justify-content: center;
+  margin-left: 140px;
+}
+.footer-knopka {
+  margin-left: 10px;
+  fill: $white-color-icon-svg;
+}

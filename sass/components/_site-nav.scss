@@ -25,16 +25,23 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 40px;
+    margin-left: 81px;
+    align-items: center;
 
     .link {
-      background-color: red;
-      padding-bottom: 40px;
+      // background-color: red;
+      padding-top: 32px;
+      padding-bottom: 29px;
     }
     .item {
-      margin-left: 50px;
-      ///////////////////////////////////////////////
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 85px;
   }
 
   .link {
