@@ -17,13 +17,21 @@
 
   <body>
     <!-- шапка сайта -->
-    <header class="page-header list">
-      <div class="conteyner">
-        <nav class="header-nav">
-          <!-- логотип ссылка -->
-          <a href="./index.html" class="logo link">
-            Web<span class="logo-studio"> Studio</span>
-          </a>
+  <header class="page-header">
+    <div class="conteyner">
+      <nav class="nav">
+        <!-- логотип ссылка -->
+        <a href="./index.html" class="logo link">
+          Web<span class="logo-studio"> Studio</span>
+        </a>
+        <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./image/symbol-defs1.svg#cross"></use>
+            <use class="icon-menu" href="./image/symbol-defs1.svg#menu"></use>
+          </svg>
+        </button>
+  
+        <div class="menu-container" id="menu-containe" data-menu>
           <!-- навигация по сайту-ссылки -->
           <ul class="site-nav list">
             <li class="item">
@@ -34,29 +42,29 @@
             </li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
-        </nav>
-
-        <!-- контакты-ссылки -->
-        <ul class="auth-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="auth-nav-icon" width="16"  height="11.2">
-                <use href="./image/symbol-defs1.svg#icon_mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="auth-nav-icon" width="10" height="14.94">
-                <use href="./image/symbol-defs1.svg#icon_phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
+  
+          <!-- контакты-ссылки -->
+          <ul class="auth-nav list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="auth-nav-icon" width="16" height="11.2">
+                  <use href="./image/symbol-defs1.svg#icon_mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="auth-nav-icon" width="10" height="14.94">
+                  <use href="./image/symbol-defs1.svg#icon_phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
     <main>
       <section class="card section">
@@ -233,9 +241,10 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <!-- адресный блок -->
-      <div class="footer-main">
+  <footer class="footer">
+    <!-- адресный блок -->
+    <div class="footer-main">
+      <div class="fer">
         <address class="adres">
           <!-- логотип ссылка -->
           <a href="./index.html" class="logo link">
@@ -243,10 +252,8 @@
           </a>
           <ul class="address list">
             <li class="item">
-              <a
-                href="https://www.google.com/maps/search/%D0%B3.+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26/@50.4728094,30.41841,12z/data=!3m1!4b1?hl=ru-KG"
-                class="map"
-                >г. Киев, пр-т Леси Украинки, 26
+              <a href="https://www.google.com/maps/search/%D0%B3.+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26/@50.4728094,30.41841,12z/data=!3m1!4b1?hl=ru-KG"
+                class="map">г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
             <li class="item">
@@ -259,7 +266,7 @@
         </address>
         <!-- призыв присоедениться -->
         <section class="section-footer">
-          <h3 class="join">присоединяйтесь</h3>
+          <h3 class="joins">присоединяйтесь</h3>
           <!-- ссылки на соц сети -->
           <ul class="footer-soc list">
             <!-- ссылка на instagram -->
@@ -296,24 +303,28 @@
             </li>
           </ul>
         </section>
-
-        <!-- призыв подписаться -->
-        <section class="prizuv">
-          <h3 class="join">Подпишитесь на рассылку</h3>
-          <form class="prizuv-forma" action="" method="post">
-            <label>
-              <input class="pole" type="email" name="email" placeholder="E-mail" />
-            </label>
-            <button class="button foot" type="submit">
-              Подписаться
-              <svg class="footer-knopka" width="24" height="24">
-                <use href="./image/symbol-defs1.svg#footer-knopka"></use>
-              </svg>
-            </button>
-          </form>
-        </section>
       </div>
-      <p class="finish">2020 | Developed by GoIT Students</p>
-    </footer>
+  
+      <!-- призыв подписаться -->
+      <section class="prizuv">
+        <h3 class="joins">Подпишитесь на рассылку</h3>
+        <form class="prizuv-forma" action="email" method="post">
+          <label>
+            <input class="pole" type="email" name="email" placeholder="E-mail" />
+          </label>
+          <button class="button foot" type="submit">
+            Подписаться
+            <svg class="footer-knopka" width="24" height="24">
+              <use href="./image/symbol-defs1.svg#footer-knopka"></use>
+            </svg>
+          </button>
+        </form>
+      </section>
+    </div>
+    <p class="finish">2020 | Developed by GoIT Students</p>
+  </footer>
+
+  <!-- <script src="./js/modal.js"></script> -->
+  <script src="./js/menu.js"></script>
   </body>
 </html>

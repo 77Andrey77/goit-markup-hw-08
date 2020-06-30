@@ -1,9 +1,64 @@
 .footer {
   background-color: $color-footer;
-  padding: 60px 15px;
+  // padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    padding: 60px 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+
+    .fer {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 89px 60px 76px;
+    }
+    .prizuv {
+      padding-bottom: 60px;
+    }
+    .prizuv-forma {
+      padding-left: 166px;
+      padding-right: 152px;
+    }
+    .button {
+      margin-left: 125px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 60px 15px;
+
+    width: 1200px;
+    height: 252px;
+    align-items: center;
+
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .prizuv-forma {
+      display: flex;
+    }
+    label {
+      width: 358px;
+    }
+    .fer {
+      display: flex;
+      align-items: baseline;
+    }
+    .adres {
+      height: auto;
+      margin-right: 69px;
+      text-align: left;
+    }
+    .address {
+      text-align: left;
+    }
+  }
   // &-main {
   //     display: flex;
   //     width: 1200px;
@@ -28,6 +83,9 @@
 }
 
 .address {
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
   text-align: center;
   justify-content: center;
   margin-top: 30px;
@@ -60,14 +118,24 @@
   text-align: center;
 }
 
-.join {
+.joins {
   color: $text-white-color;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
-
-  margin-top: 60px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-soc {
   display: flex;

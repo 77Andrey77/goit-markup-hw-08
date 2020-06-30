@@ -49,6 +49,7 @@
     background-color: white;
     text-align: center;
     font-size: 20px;
+    z-index: 10;
 
     @media screen and (max-width: 767px) {
       padding: 20px;
@@ -88,6 +89,6 @@
   }
 }
 
-// .page-header {
-//   border-bottom: 1px solid #ececec;
-// }
+.page-header {
+  border-bottom: 1px solid #ececec;
+}

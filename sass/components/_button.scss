@@ -1,8 +1,9 @@
 .button {
-  //   display: flex;
+  display: flex;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+  height: 50px;
 
   color: $text-white-color;
   background-color: $accent-color;
@@ -19,8 +20,14 @@
 }
 .button.foot {
   font-weight: 900;
-  // justify-content: center;
-  margin-left: 140px;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 140px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .footer-knopka {
   margin-left: 10px;
