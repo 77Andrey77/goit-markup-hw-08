@@ -1,20 +1,24 @@
 .backdrop {
   position: fixed;
-  //   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  z-index: 5;
   transition: opacity 250ms;
 
   @media screen and (max-width: 767px) {
-    width: 100%;
+    // width: 450px;
+    padding: 93px 15px;
   }
   @media screen and (min-width: 768px) {
-    width: 450px;
+    // width: 450px;
+    // padding: 208px 159px;
   }
   @media screen and (max-width: 1200px) {
-    width: 582px;
+    // width: 582px;
+    // padding: 221px 536px;
   }
 
   &.is-hidden {
@@ -27,14 +31,33 @@
   position: absolute;
   display: inline-block;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   padding: 40px;
 
   min-height: 581px;
-  width: 528px;
+  width: 450px;
   background: $color-body;
+
+  @media screen and (max-width: 767px) {
+    top: 93px;
+    left: 15px;
+
+    .contract {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 208px;
+    left: 159px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 221px;
+    left: 536px;
+  }
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -130,7 +153,7 @@
   top: 22px;
   left: 16px;
 
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.01em;
 
@@ -169,7 +192,7 @@ textarea {
   display: inline-flex;
   align-items: center;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-color;

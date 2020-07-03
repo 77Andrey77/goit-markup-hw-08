@@ -4,14 +4,71 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../image/hero-img.jpg);
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../image/hero-mobil.jpg);
+    background-size: 480px 400px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url('hero-mobil-2x.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../image/hero-tablet.jpg);
+    background-size: 768px 400px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url('hero-tablet-2x.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../image/hero-ps.jpg);
+    background-size: 1200px 600px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url('hero-ps-2x.jpg');
+      }
+    }
+  }
 
   @media screen and (max-width: 1199px) {
-    height: 400px;
+    // height: 400px;
 
     &-section {
       padding-top: 118px;
