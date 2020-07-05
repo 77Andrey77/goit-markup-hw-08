@@ -400,7 +400,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../image/hero-ps.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../image/hero-ps.jpg);
@@ -613,6 +613,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .team .list {
+    margin: 0 -15px;
+  }
   .team .list .people {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
@@ -621,6 +624,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .team .list {
+    margin: 0 -15px;
+  }
   .team .list .people {
     -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
         flex-basis: calc((100% - 8 * 15px) / 4);
@@ -828,9 +834,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 60px 15px;
-    width: 1200px;
-    height: 252px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -845,6 +848,11 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 15px;
+    width: 1200px;
+    height: 252px;
   }
   .footer .prizuv-forma {
     display: -webkit-box;
