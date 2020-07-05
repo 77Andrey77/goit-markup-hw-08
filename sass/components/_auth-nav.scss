@@ -14,8 +14,10 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // display: inline-block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-self: center;
 
     .item {
       display: block;
