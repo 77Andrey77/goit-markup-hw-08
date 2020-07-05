@@ -16,6 +16,7 @@
     .link {
       padding-top: 40px;
       padding-bottom: 12px;
+      font-size: 18px;
     }
     .item {
       padding-top: 40px;
@@ -32,6 +33,7 @@
       // background-color: red;
       padding-top: 32px;
       padding-bottom: 29px;
+      font-size: 14px;
     }
     .item {
       &:not(:last-child) {
@@ -42,13 +44,17 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: 85px;
+
+    .link {
+      font-size: 14px;
+    }
   }
 
   .link {
     color: $title-text-color;
 
     font-weight: 500;
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
