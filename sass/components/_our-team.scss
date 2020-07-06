@@ -5,25 +5,41 @@
   .title {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 28px;
   }
+  &-photo {
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      // height: 320px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      // height: 260px;
+    }
+  }
+  // &-thumb {
+  //   display: block;
+  // }
   .list {
+    object-fit: cover;
+    object-position: top;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     @media screen and (min-width: 768px) {
-      // margin: -15px;
-      // .people-foto {
-      //   height: 260px;
-      // }
       .people {
         flex-basis: calc((100% - 4 * 15px) / 2);
         margin: 15px;
       }
+      // .team-photo {
+      //   width: 354px;
+      // }
     }
 
     @media screen and (min-width: 1200px) {
-      // margin: -15px;
+      margin: 0 -15px;
+
       .people {
         flex-basis: calc((100% - 8 * 15px) / 4);
         margin: 15px;
