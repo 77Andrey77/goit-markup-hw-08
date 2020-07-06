@@ -595,12 +595,6 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .team .title {
-    font-size: 28px;
-  }
-}
-
 .team .list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -613,9 +607,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .team .list {
-    margin: 0 -15px;
-  }
   .team .list .people {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
@@ -624,9 +615,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .team .list {
-    margin: 0 -15px;
-  }
   .team .list .people {
     -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
         flex-basis: calc((100% - 8 * 15px) / 4);

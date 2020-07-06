@@ -5,10 +5,6 @@
   .title {
     text-align: center;
     margin-bottom: 30px;
-
-    @media screen and (max-width: 767px) {
-      font-size: 28px;
-    }
   }
   .list {
     display: flex;
@@ -16,7 +12,10 @@
     justify-content: center;
 
     @media screen and (min-width: 768px) {
-      margin: 0 -15px;
+      // margin: -15px;
+      // .people-foto {
+      //   height: 260px;
+      // }
       .people {
         flex-basis: calc((100% - 4 * 15px) / 2);
         margin: 15px;
@@ -24,8 +23,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin: 0 -15px;
-
+      // margin: -15px;
       .people {
         flex-basis: calc((100% - 8 * 15px) / 4);
         margin: 15px;
