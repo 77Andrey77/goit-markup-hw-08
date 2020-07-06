@@ -5,7 +5,9 @@
   .title {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 28px;
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+    }
   }
   &-photo {
     @media screen and (max-width: 767px) {
