@@ -18,15 +18,20 @@
     }
     @media screen and (min-width: 768px) {
       width: 354px;
-      // height: 260px;
+      height: 260px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+      // background-size: cover;
+      object-fit: cover;
+      object-position: top;
     }
   }
   // &-thumb {
   //   display: block;
   // }
   .list {
-    object-fit: cover;
-    object-position: top;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

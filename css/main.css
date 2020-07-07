@@ -612,14 +612,22 @@ body {
 @media screen and (min-width: 768px) {
   .team-photo {
     width: 354px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-photo {
+    width: 270px;
+    height: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 
 .team .list {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
